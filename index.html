@@ -1,113 +1,63 @@
-<!DOCTYPE html>
-<html lang="es">
-<head>
-  <meta charset="UTF-8">
-  <meta name="viewport" content="width=device-width, initial-scale=1.0">
-  <title>Portfolio de Ciberseguridad - María Victoria Romero Ruíz</title>
-  <style>
-    body {
-      font-family: 'Segoe UI', sans-serif;
-      background-color: #0d1117;
-      color: #c9d1d9;
-      margin: 0;
-      padding: 2rem;
-    }
-    header {
-      text-align: center;
-      margin-bottom: 2rem;
-    }
-    h1 {
-      color: #58a6ff;
-    }
-    .project {
-      background-color: #161b22;
-      padding: 1.5rem;
-      margin-bottom: 1.5rem;
-      border-left: 4px solid #58a6ff;
-      border-radius: 6px;
-    }
-    .project h2 {
-      margin-top: 0;
-      color: #79c0ff;
-    }
-    a {
-      color: #58a6ff;
-      text-decoration: none;
-    }
-    a:hover {
-      text-decoration: underline;
-    }
-    footer {
-      text-align: center;
-      margin-top: 3rem;
-      font-size: 0.9rem;
-      color: #8b949e;
-    }
-    
-   /* 🎨 Estilo degradado para títulos */
-   .gradient-title {
+<style>
+  body {
+    font-family: 'Segoe UI', sans-serif;
+    background-image: url('https://media.giphy.com/media/077i6AULCXc0FKTj9s/giphy.gif');
+    background-size: cover;
+    background-attachment: fixed;
+    background-position: center;
+    color: #c9d1d9;
+    margin: 0;
+    padding: 2rem;
+  }
+
+  header {
+    text-align: center;
+    margin-bottom: 2rem;
+  }
+
+  h1 {
+    margin: 0;
+  }
+
+  .project {
+    background-color: rgba(22, 27, 34, 0.88); /* fondo semitransparente para leer bien sobre gif */
+    padding: 1.5rem;
+    margin-bottom: 1.5rem;
+    border-left: 4px solid #58a6ff;
+    border-radius: 6px;
+  }
+
+  .project h2 {
+    margin-top: 0;
+  }
+
+  a {
+    color: #58a6ff;
+    text-decoration: none;
+  }
+
+  a:hover {
+    text-decoration: underline;
+  }
+
+  footer {
+    text-align: center;
+    margin-top: 3rem;
+    font-size: 0.9rem;
+    color: #8b949e;
+  }
+
+  /* 🎨 Estilo degradado para todos los títulos */
+  .gradient-title {
     background: linear-gradient(90deg, #f72585, #7209b7, #3a0ca3, #4361ee, #4cc9f0);
     -webkit-background-clip: text;
     -webkit-text-fill-color: transparent;
     font-weight: bold;
     font-size: 1.5em;
   }
-  </style>
-</head>
-<body>
-  <header>
-    <h1 class="gradient-title">🛡️ Portfolio de Ciberseguridad</h1>
-    <p>María Victoria Romero Ruíz</p>
-  </header>
 
-  <div class="project">
-    <h2 class="gradient-title">🧨 SQL Injection con Python y Flask</h2>
-    <p>Simulación de una vulnerabilidad real de SQL Injection, desarrollada con Python y SQLite. El proyecto incluye una aplicación web en Flask que muestra tanto la versión vulnerable como la protegida.</p>
-    <p><strong>Repositorio:</strong> <a href="https://github.com/Mariaromeroruiz/sql-injection-python" target="_blank">Ver en GitHub</a></p>
-  </div>
-
-  <div class="project">
-    <h2 class="gradient-title">💣 Fuerza Bruta a Login con Python y Flask</h2>
-    <p>Simulación de un ataque de fuerza bruta automatizado a un formulario de login, desarrollado en Flask con Python. Incluye versión protegida con bloqueo de intentos.</p>
-    <p><strong>Repositorio:</strong> <a href="https://github.com/Mariaromeroruiz/Fuerza-bruta-login" target="_blank">Ver en GitHub</a></p>
-  </div>
-  
-  <div class="project">
-    <h2 class="gradient-title">🛡️ Simulación de XSS con Flask y Burp Suite</h2>
-    <p>
-      Proyecto que simula un ataque XSS real en una app web con Flask. El ataque es interceptado y modificado con Burp Suite,
-      mostrando cómo puede explotarse y cómo se implementa una defensa eficaz contra él.
-    </p>
-    <p><strong>Repositorio:</strong> <a href="https://github.com/Mariaromeroruiz/Simulacion-de-XSS-con-Flask-y-Burp-Suite" target="_blank">Ver en GitHub</a></p>
-  </div>
-
-  <div class="project">
-    <h2 class="gradient-title">🌐 Análisis de Red Local con Nmap</h2>
-    <p>
-      Proyecto de reconocimiento de red usando Nmap. Se detectan dispositivos conectados a la red local y se realiza
-      análisis de puertos y servicios expuestos. Incluye interpretación de resultados reales y capturas.
-    </p>
-    <p><strong>Repositorio:</strong> <a href="https://github.com/Mariaromeroruiz/analisis-red-local-nmap" target="_blank">Ver en GitHub</a></p>
-  </div>
-  
-  <div class="project">
-    <h2 class="gradient-title">🔓 Captura de tráfico HTTP inseguro con Wireshark</h2>
-    <p>
-      Análisis de red donde se intercepta un formulario sin cifrado y se visualizan credenciales en texto plano. Simulación de ataque en red Wi-Fi para reforzar la importancia de HTTPS.
-    </p>
-    <p><strong>Repositorio:</strong> <a href="https://github.com/Mariaromeroruiz/Captura-de-trafico-inseguro-con-Wireshark" target="_blank">Ver en GitHub</a></p>
-  </div>
-  
-  <div class="project">
-    <h2 class="gradient-title">🛡️ Honeypot en Python + Análisis real de red</h2>
-    <p>
-      Proyecto donde se simulan servicios vulnerables, se detectan conexiones sospechosas y se analizan puertos abiertos reales en red local.
-    </p>
-    <p><strong>Repositorio:</strong> <a href="https://github.com/Mariaromeroruiz/Honeypot" target="_blank">Ver en GitHub</a></p>
-  </div>
-  
-  <footer>
-    © 2025 María Victoria Romero Ruíz — Ciberseguridad | Desarrollo Seguro
-  </footer>
-</body>
-</html>
+  /* Tamaño más grande para el título principal */
+  h1.gradient-title {
+    font-size: 2.3em;
+  }
+</style>
