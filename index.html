@@ -15,12 +15,8 @@
     margin-bottom: 2rem;
   }
 
-  h1 {
-    margin: 0;
-  }
-
   .project {
-    background-color: rgba(22, 27, 34, 0.88); /* fondo semitransparente para leer bien sobre gif */
+    background-color: rgba(22, 27, 34, 0.88);
     padding: 1.5rem;
     margin-bottom: 1.5rem;
     border-left: 4px solid #58a6ff;
@@ -56,11 +52,15 @@
     font-size: 1.5em;
   }
 
-  /* Tamaño más grande para el título principal */
+  /* 🔝 Título principal con degradado aún más grande */
   h1.gradient-title {
-    font-size: 2.3em;
+    background: linear-gradient(90deg, #f72585, #7209b7, #3a0ca3, #4361ee, #4cc9f0);
+    -webkit-background-clip: text;
+    -webkit-text-fill-color: transparent;
+    font-weight: bold;
+    font-size: 2.5em;
+    margin: 0;
   }
-</style>
 </style>
 </head>
 <body>
